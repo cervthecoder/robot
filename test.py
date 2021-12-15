@@ -30,7 +30,7 @@ try:
 		GPIO.output(DIR,CW)
 
 		# Run for 200 steps. This will change based on how you set you controller
-		for x in range(200):
+		for x in range(10):
 
 			# Set one coil winding to high
 			GPIO.output(STEP,GPIO.HIGH)
