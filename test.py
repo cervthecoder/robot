@@ -35,10 +35,10 @@ try:
 			# Set one coil winding to high
 			GPIO.output(STEP,GPIO.HIGH)
 			# Allow it to get there.
-			sleep(.004) # Dictates how fast stepper motor will run
+			sleep(.001) # Dictates how fast stepper motor will run
 			# Set coil winding to low
 			GPIO.output(STEP,GPIO.LOW)
-			sleep(.004) # Dictates how fast stepper motor will run
+			sleep(.001) # Dictates how fast stepper motor will run
 
 		"""Change Direction: Changing direction requires time to switch. The
 		time is dictated by the stepper motor and controller. """
